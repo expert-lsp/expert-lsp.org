@@ -51,8 +51,6 @@ Head to the Zed documentation to [learn more about installing extensions](https:
 
 ## Helix
 
-## Helix
-
 Add the following config to your `~/.config/helix/languages.toml`.
 
 ```toml
@@ -77,7 +75,57 @@ args = ["--stdio=true"]
 
 ## Emacs
 
-> [!warning] TODO
+The emacs instructions assume you're using **use-package**.
+
+### Eglot
+
+#### Emacs version >= 30
+
+```emacs-lisp
+(use-package eglot
+  :ensure nil ;; eglot is included in emacs >= 29  
+  
+  :config
+  (setf (alist-get '(elixir-mode elixir-ts-mode heex-ts-mode)
+                   eglot-server-programs
+                   nil nil #'equal)
+        (eglot-alternatives '(("path/to/expert" "--stdio"))))
+
+  ;; other config
+  )
+```
+
+#### Emacs version <= 29
+
+```emacs-lisp
+(use-package lsp-mode
+  :ensure nil ;; eglot is included in emacs >= 29, use :ensure t if using an older version
+  
+  :config
+  (setf (alist-get 'elixir-mode eglot-server-programs)
+        (eglot-alternatives '(("path/to/expert" "--stdio"))))
+
+  ;; other config
+  )
+```
+
+> [!note]
+> 
+> If you are using **elixir-ts-mode** instead of **elixir-mode** replace **(alist-get 'elixir-mode eglot-server-programs)** from the snippet above with **(alist-get '(elixir-mode elixir-ts-mode heex-ts-mode) eglot-server-programs)**
+
+
+### lsp-mode
+
+```emacs-lisp
+(use-package lsp-mode
+  :ensure t
+  
+  :config
+  (lsp-elixir-server-command '("path/to/expert" "--stdio")))
+  
+  ;; other config
+  )
+```
 
 ## Sublime
 
