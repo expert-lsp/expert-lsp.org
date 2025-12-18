@@ -11,7 +11,7 @@ order: 3
 > 
 > This extension is not yet published to the marketplace.
 
-[expert-lsp/vscode-expert](https://github.com/expert-lsp/vsode-expert) is the official Visual Studio Code extension.
+[expert-lsp/vscode-expert](https://github.com/expert-lsp/vscode-expert) is the official Visual Studio Code extension.
 
 **The extension is not yet stable and is not yet published to the extension marketplaces.**
 
