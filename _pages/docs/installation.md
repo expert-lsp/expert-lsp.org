@@ -151,4 +151,11 @@ Recipes for building from source are located in our [justfile](https://github.co
 $ just install
 ```
 
+You can also skip cross-platform builds by running:
+
+```shell
+$ just release
+```
+
+And following the instructions in the output to point your editor to this build.
 
