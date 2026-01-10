@@ -5,8 +5,25 @@ section: Features
 order: 2
 ---
 
-Expert provides the ability to go to the definition of a function, macro, type or module, in your project or
-in dependencies.
+Expert allows you to jump to the definition of functions, macros, types, and modules in your project and dependencies.
 
 > [!note]
 > This feature does not yet support navigating to definitions from the standard library.
+
+### Local project
+
+<video autoplay loop muted playsinline controls>
+  <source src="/docs/features/go_to_definition.mp4" type="video/mp4">
+</video>
+
+### HEEx templates
+
+<video autoplay loop muted playsinline controls>
+  <source src="/docs/features/go_to_definition_heex.mp4" type="video/mp4">
+</video>
+
+### Dependencies and macros
+
+<video autoplay loop muted playsinline controls>
+  <source src="/docs/features/go_to_definition_dep_macro.mp4" type="video/mp4">
+</video>

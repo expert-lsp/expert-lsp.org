@@ -5,6 +5,10 @@ section: Features
 order: 6
 ---
 
-Expert provides hover information for functions, macros, types, and modules in your project and dependencies.
+Hover over any symbol to see its documentation, type signature, and source location.
 
-When you hover over a symbol, Expert will display relevant information such as type signatures, documentation comments, and module paths.
+This works for functions, macros, types, and modules in your project and dependencies.
+
+<video autoplay loop muted playsinline controls>
+  <source src="/docs/features/hover.mp4" type="video/mp4">
+</video>

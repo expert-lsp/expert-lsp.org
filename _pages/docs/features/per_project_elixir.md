@@ -5,10 +5,6 @@ section: Features
 order: 9
 ---
 
-Expert can be developed and built with any elixir+otp versions, it doesn't matter if they're different from the ones used in your projects.
+Expert automatically detects and uses the Elixir and OTP versions configured for each project.
 
-When you open a project, Expert will automatically detect the elixir and otp versions you have installed for that project, and it will
-build itself using those versions to provide the best compatibility.
-
-This way, you don't have to worry about waiting for Expert to support the latest elixir or otp versions, as long as you have them installed
-locally, Expert will use them.
+When you open a project, Expert rebuilds itself with your project's Elixir version for full compatibility. This means you don't have to wait for Expert updates when upgrading Elixir—as long as it's installed locally, Expert will use it.

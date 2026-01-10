@@ -29,6 +29,44 @@ Tableau pages have the most flexibility, but markdown files are the most simple.
 
 This site uses [Temple](https://github.com/mhanberg/temple) for templating. It is an Elixir HTML DSL.
 
+## Adding feature videos
+
+Screen recordings for documentation should be converted to optimized MP4 format for web delivery. Place videos in `extra/docs/features/`.
+
+### Recording preferences
+
+For consistency across demo videos, we prefer:
+
+- **Editor**: Visual Studio Code
+- **Theme**: Light (Visual Studio) - the default light theme
+- **Font size**: 14px (default)
+- **Font family**: Default
+
+If a feature can't be clearly demonstrated in VS Code, you may use another editor.
+
+### Converting videos
+
+To convert a screen recording to the correct format:
+
+```shell
+ffmpeg -i input_video.mov \
+  -c:v libx264 \
+  -crf 26 \
+  -preset slow \
+  -r 30 \
+  -an \
+  -movflags +faststart \
+  output_video.mp4
+```
+
+Replace `input_video.mov` with your source file (can be any video format) and `output_video.mp4` with the desired output name.
+
+This produces a web-optimized MP4 with:
+- H.264 codec for broad compatibility
+- 30fps (sufficient for UI demos)
+- No audio track
+- Fast-start enabled for web streaming
+
 ## Deployment
 
 The site is deployed to Netlify automatically using GitHub Actions and the Netlify CLI.

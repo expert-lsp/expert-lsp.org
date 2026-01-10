@@ -5,8 +5,11 @@ section: Features
 order: 3
 ---
 
-Expert provides fast compiler diagnostics as you type, showing errors and warnings directly in your editor.
+Expert shows compiler errors and warnings directly in your editor as you type.
 
-It compiles the file you are currently editing as you type, and reports any issues it finds.
-Once a file is saved, Expert will also compile the entire project in the background to ensure that all diagnostics are up to date.
+The current file is compiled on every keystroke for immediate feedback. When you save, Expert compiles the entire project in the background to catch cross-file issues.
+
+<video autoplay loop muted playsinline controls>
+  <source src="/docs/features/compiler_diagnostics.mp4" type="video/mp4">
+</video>
 

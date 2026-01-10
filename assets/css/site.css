@@ -9,11 +9,11 @@
   --font-sans: "Inter";
 }
 
-.page img {
+.page img[src^="/sponsors/"] {
   @apply h-[100px];
 }
 
-.page p:has(img) {
+.page p:has(img[src^="/sponsors/"]) {
   @apply flex flex-wrap gap-4;
 }
 
