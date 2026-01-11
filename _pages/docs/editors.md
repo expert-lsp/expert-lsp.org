@@ -68,7 +68,7 @@ name = "elixir"
 scope = "source.elixir"
 language-servers = ["expert"]
 
-[language-server.nextls]
+[language-server.expert]
 command = "path/to/expert"
 args = ["--stdio=true"]
 ```
