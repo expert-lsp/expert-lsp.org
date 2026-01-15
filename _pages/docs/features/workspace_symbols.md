@@ -13,3 +13,11 @@ The following example uses the [telescope.nvim](https://github.com/nvim-telescop
   <source src="/docs/features/workspace_symbols.mp4" type="video/mp4">
 </video>
 
+## Configuration
+
+The workspaceSymbols.minQueryLength setting controls the minimum number of characters required before the search returns results:
+
+- Set to 0 to return all symbols with an empty query
+- Set to any other value to filter results server-side, only returning matches once the query meets the minimum length
+
+See [Configuration](/docs/configuration) for details.

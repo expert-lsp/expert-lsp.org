@@ -2,7 +2,7 @@
 title: Editors
 layout: ExpertLspOrg.DocLayout
 section: Getting Started
-order: 3
+order: 2
 ---
 
 ## Visual Studio Code

@@ -2,7 +2,7 @@
 title: Installation
 layout: ExpertLspOrg.DocLayout
 section: Getting Started
-order: 2
+order: 1
 ---
 
 > [!caution] Work In Progress
