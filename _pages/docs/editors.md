@@ -2,7 +2,7 @@
 title: Editors
 layout: ExpertLspOrg.DocLayout
 section: Getting Started
-order: 3
+order: 2
 ---
 
 ## Visual Studio Code
@@ -43,11 +43,43 @@ The plugin will take care of installing the Expert for you if you wish.
 vim.lsp.enable "expert"
 ```
 
+### Configuration
+
+To configure Expert settings, use `vim.lsp.config`:
+
+```lua
+vim.lsp.config("expert", {
+  settings = {
+    workspaceSymbols = {
+      minQueryLength = 0
+    }
+  }
+})
+```
+
 ## Zed
 
 Expert is managed by the first party Zed [Elixir Extension](https://github.com/zed-extensions/elixir/tree/main).
 
 Head to the Zed documentation to [learn more about installing extensions](https://zed.dev/docs/extensions/installing-extensions).
+
+### Configuration
+
+To configure Expert settings, add the following to your `settings.json`:
+
+```json
+{
+  "lsp": {
+    "expert": {
+      "settings": {
+        "workspaceSymbols": {
+          "minQueryLength": 0
+        }
+      }
+    }
+  }
+}
+```
 
 ## Helix
 
@@ -71,6 +103,19 @@ language-servers = ["expert"]
 [language-server.expert]
 command = "path/to/expert"
 args = ["--stdio=true"]
+```
+
+### Configuration
+
+To configure Expert settings, add a `config` section to the language server definition in your `languages.toml`:
+
+```toml
+[language-server.expert]
+command = "path/to/expert"
+args = ["--stdio=true"]
+
+[language-server.expert.config]
+workspaceSymbols = { minQueryLength = 0 }
 ```
 
 ## Emacs
@@ -98,7 +143,7 @@ The emacs instructions assume you're using **use-package**.
 #### Emacs version <= 29
 
 ```emacs-lisp
-(use-package lsp-mode
+(use-package eglot
   :ensure nil ;; eglot is included in emacs >= 29, use :ensure t if using an older version
   
   :config
@@ -113,6 +158,14 @@ The emacs instructions assume you're using **use-package**.
 > 
 > If you are using **elixir-ts-mode** instead of **elixir-mode** replace **(alist-get 'elixir-mode eglot-server-programs)** from the snippet above with **(alist-get '(elixir-mode elixir-ts-mode heex-ts-mode) eglot-server-programs)**
 
+#### Configuration
+
+To configure Expert settings, use `eglot-workspace-configuration`:
+
+```emacs-lisp
+(setq-default eglot-workspace-configuration
+  '(:expert (:workspaceSymbols (:minQueryLength 0))))
+```
 
 ### lsp-mode
 
@@ -125,6 +178,15 @@ The emacs instructions assume you're using **use-package**.
   
   ;; other config
   )
+```
+
+#### Configuration
+
+To configure Expert settings, use `lsp-register-custom-settings`:
+
+```emacs-lisp
+(lsp-register-custom-settings
+  '(("workspaceSymbols.minQueryLength" 0)))
 ```
 
 ## Sublime
