@@ -27,7 +27,7 @@ These funds are currently helping to pay [Lucas San Roman](https://github.com/Do
 
 There are also several companies dedicating employees to Expert development.
 
-- [Jump](https://www.jump.com/)
+- [Jump](https://jump.ai//)
     - [Paweł Świątkowski](https://github.com/katafrakt) (Full Time Dev)
     - [Tyler Young](https://github.com/s3cur3) (Part Time Manager)
 - [Software Mansion](https://swmansion.com/)
