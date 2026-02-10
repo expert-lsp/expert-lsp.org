@@ -96,15 +96,21 @@ Please see the installation instructions <a href="/docs/installation">here</a>.
 </details>
 
 <details class="mt-4">
-<summary class="font-bold">VSCode/Cursor extension?</summary>
-Yes: <a href="https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert">https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert</a>
+<summary class="font-bold">VSCode/Cursor/Etc extension?</summary>
+<a href="https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert">Visual Studio Code Marketplace</a>
+<a href="https://open-vsx.org/extension/ExpertLSP/expert">Open VSX Registry</a>
 </details>
 
 <details class="mt-4">
 <summary class="font-bold">Nightly releases?</summary>
-We have nightly releases published once a day: https://github.com/elixir-lang/expert/releases/tag/nightly.
+We have nightly <a href="https://github.com/elixir-lang/expert/releases/tag/nightly">releases</a> published once a day.
 
 We will continue to publish the nightly releases even after we publish the first versioned release.
+</details>
+
+<details class="mt-4">
+<summary class="font-bold">Can I get Credo in my editor?</summary>
+We are still working out how to best support common tools like Credo that provide project diagnostics. At this time, no Credo or other plugins are supported.
 </details>
 
 <details class="mt-4">
