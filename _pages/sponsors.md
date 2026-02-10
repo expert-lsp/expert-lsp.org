@@ -24,7 +24,7 @@ A huge thanks to our current sponsors!
 [![](/sponsors/river.png)](https://river.com/)
 [![](/sponsors/logo-enigmatic-original.webp)](https://enigmatic.swiss/)
 
-## Emiritis
+## Emeritus
 
 Thank you to all past sponsors!
 
