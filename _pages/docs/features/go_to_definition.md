@@ -10,19 +10,19 @@ Expert allows you to jump to the definition of functions, macros, types, and mod
 > [!note]
 > This feature does not yet support navigating to definitions from the standard library.
 
-### Local project
+## Local project
 
 <video autoplay loop muted playsinline controls>
   <source src="/docs/features/go_to_definition.mp4" type="video/mp4">
 </video>
 
-### HEEx templates
+## HEEx templates
 
 <video autoplay loop muted playsinline controls>
   <source src="/docs/features/go_to_definition_heex.mp4" type="video/mp4">
 </video>
 
-### Dependencies and macros
+## Dependencies and macros
 
 <video autoplay loop muted playsinline controls>
   <source src="/docs/features/go_to_definition_dep_macro.mp4" type="video/mp4">

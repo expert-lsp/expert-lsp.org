@@ -158,4 +158,3 @@ $ just release
 ```
 
 And following the instructions in the output to point your editor to this build.
-
