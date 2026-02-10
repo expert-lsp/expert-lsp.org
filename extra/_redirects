@@ -1,3 +1,4 @@
 /js/analytics.js https://plausible.io/js/script.js 200
 /api/event https://plausible.io/api/event 200
+/docs /docs/installation
 
