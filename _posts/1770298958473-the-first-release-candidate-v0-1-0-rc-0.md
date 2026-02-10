@@ -96,7 +96,7 @@ Please see the installation instructions <a href="/docs/installation">here</a>.
 </details>
 
 <details class="mt-4">
-<summary class="font-bold">VSCode extension?</summary>
+<summary class="font-bold">VSCode/Cursor extension?</summary>
 Yes: <a href="https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert">https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert</a>
 </details>
 
