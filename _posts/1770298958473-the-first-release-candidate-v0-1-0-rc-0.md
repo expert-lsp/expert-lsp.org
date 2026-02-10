@@ -1,7 +1,7 @@
 ---
 layout: ExpertLspOrg.PostLayout
 title: "The First Release Candidate: 0.1.0-rc.0"
-date: February 10, 2026 08:42:38 AM EST
+date: February 9, 2026 08:42:38 AM EST
 permalink: /:title/
 authors: [mitch]
 tags: []
