@@ -7,7 +7,9 @@ order: 2
 
 ## Visual Studio Code
 
-The official extension fot Visual Studio Code (and its forks, such as Cursor) is available in the marketplace as [Expert LSP](https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert). The extension will take care of installing the Expert for you if you wish.
+The official extension fot Visual Studio Code (and its forks, such as Cursor) is available as **Expert LSP** in the [Visual Studio Marketplate](https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert) and in the [Open VSX Registry](https://open-vsx.org/extension/ExpertLSP/expert). 
+
+The extension will take care of installing Expert for you, if you wish.
 
 ## Neovim
 
