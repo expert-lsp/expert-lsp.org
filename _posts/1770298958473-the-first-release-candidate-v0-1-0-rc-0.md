@@ -86,7 +86,7 @@ If you'd like to contribute or open an issue, you can find our various projects 
 
 ## How to help
 
-Please try the release candidate and report any bugs you come across! Getting bug reports with proper reproduction cases along with all relevant information like OS, Elixir version, Erlang version, project size, etc is extremely helpful.
+Please try the release candidate and report any bugs you come across! Getting bug reports with proper reproduction cases along with all relevant information like your `.expert/expert.log`, OS, Elixir version, Erlang version, project size, etc is extremely helpful.
 
 ## FAQ
 
