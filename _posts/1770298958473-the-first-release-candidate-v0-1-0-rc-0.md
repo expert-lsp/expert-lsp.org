@@ -24,7 +24,6 @@ As of today, the project is financially sponsored by the following companies. Th
 
 These funds are currently helping to pay [Lucas San Roman](https://github.com/Doorgan) to work on Expert full time. Lucas has been working mostly full time on Expert since June of 2025.
 
-[Fly](https://fly.io) had been sponsoring Lucas' work for a while under the radar before we announced the project at ElixirConf, so a big shout out to them!
 
 There are also several companies dedicating employees to Expert development.
 
