@@ -11,6 +11,8 @@ Hello everyone!
 
 After many months of work, we are ready to cut the first release candidate for the Expert language server. This has been a huge effort by a number of people and we thank you for the patience and support!
 
+This release marks that effort to combine Lexical and Next LS have reached stability and developers can migrate over without fear that their development workflow will be broken.
+
 Before we dive into the release candidate, let's thank the project sponsors, contributors, and review the milestones we've set up.
 
 ## Funding
@@ -65,7 +67,7 @@ Shortly after our public announcement during Jose's keynote at ElixirConf 2025, 
 
 We are prioritizing stability first, then integrating missing features from Next LS and ElixirLS, and then brand new features.
 
-- [v0.1](https://github.com/elixir-lang/expert/milestone/1): Captures all work to get Expert to be ready to be a daily driver for intrepid early adopters. We continuously add bugs to this milestone as we find them. This also included getting it running on Windows, which was missing from [Lexical](https://github.com/lexical-lsp/lexical) and [Next LS](https://github.com/elixir-tools/next-ls).
+- [v0.1](https://github.com/elixir-lang/expert/milestone/1): Captures all work to get Expert to be ready to be daily driven by intrepid early adopters. We continuously add bugs to this milestone as we find them. This also included getting it running on Windows, which was missing from [Lexical](https://github.com/lexical-lsp/lexical) and [Next LS](https://github.com/elixir-tools/next-ls).
 - [v0.2](https://github.com/elixir-lang/expert/milestone/2): Captures work to integrate missing features from [Next LS](https://github.com/elixir-tools/next-ls).
 - [v0.3](https://github.com/elixir-lang/expert/milestone/3): Captures work to integrate missing features from [ElixirLS](https://github.com/elixir-lsp/elixir-ls).
 - [v0.4](https://github.com/elixir-lang/expert/milestone/4): Captures any new features not present in either [Lexical](https://github.com/lexical-lsp/lexical), [Next LS](https://github.com/elixir-tools/next-ls), or [ElixirLS](https://github.com/elixir-lsp/elixir-ls).
