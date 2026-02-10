@@ -26,15 +26,10 @@ As of today, the project is financially sponsored by the following companies. Th
 
 These funds are currently helping to pay [Lucas San Roman](https://github.com/Doorgan) to work on Expert full time. Lucas has been working mostly full time on Expert since June of 2025.
 
-
 There are also several companies dedicating employees to Expert development.
 
-- [Jump](https://jump.ai//)
-    - [Paweł Świątkowski](https://github.com/katafrakt) (Full Time Dev)
-    - [Tyler Young](https://github.com/s3cur3) (Part Time Manager)
-- [Software Mansion](https://swmansion.com/)
-    - [Piotr Figiela](https://github.com/Draggu) (Full Time Dev)
-    - [Marek Kaput](https://github.com/mkaput) (Part Time Manager)
+- [Paweł Świątkowski](https://github.com/katafrakt) from [Jump](https://jump.ai/)
+- [Piotr Figiela](https://github.com/Draggu) from [Software Mansion](https://swmansion.com/)
 
 ## Contributors
 
