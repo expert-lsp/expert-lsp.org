@@ -7,15 +7,9 @@ order: 2
 
 ## Visual Studio Code
 
-> [!caution] In Progress
-> 
-> This extension is not yet published to the marketplace.
+The official extension fot Visual Studio Code (and its forks, such as Cursor) is available as **Expert LSP** in the [Visual Studio Marketplate](https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert) and in the [Open VSX Registry](https://open-vsx.org/extension/ExpertLSP/expert). 
 
-[expert-lsp/vscode-expert](https://github.com/expert-lsp/vscode-expert) is the official Visual Studio Code extension.
-
-**The extension is not yet stable and is not yet published to the extension marketplaces.**
-
-The extension will take care of installing the Expert for you if you wish.
+The extension will take care of installing Expert for you, if you wish.
 
 ## Neovim
 
