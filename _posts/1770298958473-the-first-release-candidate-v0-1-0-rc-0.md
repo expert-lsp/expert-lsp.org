@@ -9,9 +9,9 @@ tags: []
 
 Hello everyone!
 
-After many months of work, we are ready to cut the first release candidate for the Expert language server. This has been a huge effort by a number of people and we thank you for the patience and support!
+After many months of work, we have cut the first release candidate [v0.1.0-rc.0](https://github.com/elixir-lang/expert/releases/tag/v0.1.0-rc.0) for the Expert language server. This has been a huge effort by a number of people and we thank you for the patience and support!
 
-This release marks that effort to combine Lexical and Next LS have reached stability and developers can migrate over without fear that their development workflow will be broken.
+This release marks that effort to [combine Lexical and Next LS](https://www.youtube.com/watch?v=2vIw2fb9DxA) have reached stability and developers can migrate over without fear that their development workflow will be broken.
 
 Before we dive into the release candidate, let's thank the project sponsors, contributors, and review the milestones we've set up.
 
@@ -53,12 +53,11 @@ A list of all contributors since ElixirConf 2025:
 | [afterlook](https://github.com/afterlook) | [Adam C. Stephens](https://github.com/adamcstephens) | [Rasheed Atanda](https://github.com/heywhy) | [Ang](https://github.com/kianmeng) |
 | [Mikael Muszynski](https://github.com/linduxed) | [rktjmp](https://github.com/rktjmp) | [Flávio Escobar](https://github.com/flavioescobar) | [Wilhelm Kirschbaum](https://github.com/wkirschbaum) |
 | [Oliver Kriska](https://github.com/oliver-kriska) | [Erick Navarro](https://github.com/erickgnavar) | [Artem Solomatin](https://github.com/solar05) | [Maks E.](https://github.com/salfum) |
-| [Brian Cardarella](https://github.com/bcardarella) |
-
+| [Brian Cardarella](https://github.com/bcardarella) |  |  |  |
 
 ## v0.1.0-rc.0
 
-Shortly after our public announcement during Jose's keynote at ElixirConf 2025, I triaged the work into GitHub issues and organized them into milestones. These milestones are the priority list for contributors needing to decide what to work on.
+Shortly after our public announcement during [José's keynote at ElixirConf 2025](https://youtu.be/BUOTLZOyLvc?t=1427), I triaged the work into GitHub issues and organized them into milestones. These milestones are the priority list for contributors needing to decide what to work on.
 
 We are prioritizing stability first, then integrating missing features from Next LS and ElixirLS, and then brand new features.
 
@@ -70,6 +69,18 @@ We are prioritizing stability first, then integrating missing features from Next
 ## Features
 
 You can check out the [documentation](/docs) to see a list of all features and some videos of them in action.
+
+A quick list includes:
+
+- Compiler Diagnostics
+- Completions
+- Document Symbols (Code Outline, Breadrumbs)
+- Go to definition
+- Monorepo support (Workspace folders)
+- Workspace symbols
+- Refactors (Code Actions)
+- Documentation on Hover
+- Formatting
 
 ## Code
 
@@ -89,41 +100,95 @@ Please try the release candidate and report any bugs you come across! Getting bu
 
 <details>
 <summary class="font-bold">How can I install it?</summary>
-Please see the installation instructions <a href="/docs/installation">here</a>.
+
+Please see the installation instructions [here](/docs/installation).
+
 </details>
 
 <details class="mt-4">
 <summary class="font-bold">VSCode/Cursor/Etc extension?</summary>
-<a href="https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert">Visual Studio Code Marketplace</a>
-<a href="https://open-vsx.org/extension/ExpertLSP/expert">Open VSX Registry</a>
+
+- [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert)
+- [Open VSX Registry](https://open-vsx.org/extension/ExpertLSP/expert)
+
 </details>
 
 <details class="mt-4">
 <summary class="font-bold">Nightly releases?</summary>
-We have nightly <a href="https://github.com/elixir-lang/expert/releases/tag/nightly">releases</a> published once a day.
+
+We have nightly [releases](https://github.com/elixir-lang/expert/releases/tag/nightly) published once a day.
 
 We will continue to publish the nightly releases even after we publish the first versioned release.
+
 </details>
 
 <details class="mt-4">
 <summary class="font-bold">Can I get Credo in my editor?</summary>
+
 We are still working out how to best support common tools like Credo that provide project diagnostics. At this time, no Credo or other plugins are supported.
+
 </details>
 
 <details class="mt-4">
 <summary class="font-bold">Why are the projects in 3 different GitHub orgs?</summary>
 
-We chose to put the main Expert repository in the `elixir-lang` organization to signal the importance of the project to the Elixir language ecosystem. We created the `expert-lsp` GitHub organization for any related projects like the website and VSCode extension that don't necessarily need to go in the main `elixir-lang` org.
+We chose to put the main Expert repository in the [elixir-lang](https://github.com/elixir-lang) organization to signal the importance of the project to the Elixir language ecosystem. We created the [expert-lsp](https://github.com/expert-lsp) GitHub organization for any related projects like the website and VSCode extension that don't necessarily need to go in the main `elixir-lang` org.
 
-Spitfire and GenLSP were already `elixir-tools` projects.
+Spitfire and GenLSP were already [elixir-tools](https://github.com/elixir-tools) projects.
+
+</details>
+
+<details class="mt-4">
+<summary class="font-bold">Why are you doing a release candidate?</summary>
+
+We want people to know that we think its ready, but we need broader testing still. There are only so many people who are up to installing a nightly unstable build of a language server and hopefully publishing a release candidate will inspire more people to try it.
+
+Once we capture and fix the issues reported with RC 0, we will release an RC 1 to verify with users that those bugs are fixed. Depending on the amount of issues reported during RC 1, we will publish the full 0.1.0 release.
+
+Hopefully this process takes 2-3 weeks.
+
+</details>
+
+<details class="mt-4">
+<summary class="font-bold">What about 1.0?</summary>
+
+We haven't discussed what 1.0 will look like yet.
+
 </details>
 
 <details class="mt-4">
 <summary class="font-bold">How can I sponsor?</summary>
-Please see the sponsors page <a href="/sponsors">here</a>.
+
+Please see the sponsors page [here](/sponsors).
+
 </details>
 
 <details class="mt-4">
 <summary class="font-bold">Can I sponsor on GitHub?</summary>
+
 You can sponsor folks individually on GitHub, but you cannot sponsor the "project" on GitHub.
+
+</details>
+
+<details class="mt-4">
+<summary class="font-bold">Is there a logo?</summary>
+
+Not yet! If you want to submit something for consideration, please send me an email with your idea/mockup/design to mitch at mitchellhanberg dot com. Please only send original work, I will not consider any GenAI submissions.
+
+</details>
+
+<details class="mt-4">
+<summary class="font-bold">Where can I learn more about the history of the project?</summary>
+
+Please see the [History](/history) page for the origin story.
+
+</details>
+
+<details class="mt-4">
+<summary class="font-bold">How did you combine Lexical and Next LS?</summary>
+
+We started with the Lexical codebase since it was the more complicated one, then altered it to use components from Next LS like using [Burrito](https://www.youtube.com/watch?v=2vIw2fb9DxA) for releases, [GenLSP](https://github.com/elixir-tools/gen_lsp) for the LSP abstraction and soon will be exploring other parts of Next LS like using SQLite.
+
+You can see more details in my (Mitch) talk at [CodeBeam America 2025](https://www.youtube.com/watch?v=2vIw2fb9DxA) for more information.
+
 </details>
