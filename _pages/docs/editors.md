@@ -13,22 +13,6 @@ The extension will take care of installing Expert for you, if you wish.
 
 ## Neovim
 
-### elixir-tools.nvim
-
-> [!caution] In Progress
-> 
-> This plugin does not yet support Expert
-
-> [!caution]
-> 
-> If you are using a Neovim distribution like [LunarVim](https://www.lunarvim.org/), [AstroVim](https://astronvim.com/), or [NVChad](https://nvchad.com/), please make sure to disable any Elixir LSP support that comes out of the box, as it will interfere with `elixir-tools.nvim`.
-
-There is no "official" plugin for Neovim, but the [elixir-tools.nvim](https://github.com/elixir-tools/elixir-tools.nvim) plugin was created and is maintained by an Expert core team member.
-
-**Expert support in elixir-tools.nvim is still in progress.**
-
-The plugin will take care of installing the Expert for you if you wish.
-
 ### nvim-lspconfig
 
 [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) supports Expert.
@@ -50,6 +34,22 @@ vim.lsp.config("expert", {
   }
 })
 ```
+
+### elixir-tools.nvim
+
+> [!caution] In Progress
+>
+> This plugin does not yet support Expert
+
+> [!caution]
+>
+> If you are using a Neovim distribution like [LunarVim](https://www.lunarvim.org/), [AstroVim](https://astronvim.com/), or [NVChad](https://nvchad.com/), please make sure to disable any Elixir LSP support that comes out of the box, as it will interfere with `elixir-tools.nvim`.
+
+There is no "official" plugin for Neovim, but the [elixir-tools.nvim](https://github.com/elixir-tools/elixir-tools.nvim) plugin was created and is maintained by an Expert core team member.
+
+**Expert support in elixir-tools.nvim is still in progress.**
+
+The plugin will take care of installing the Expert for you if you wish.
 
 ## Zed
 
