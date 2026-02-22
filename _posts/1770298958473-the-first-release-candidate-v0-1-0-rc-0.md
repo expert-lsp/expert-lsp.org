@@ -41,7 +41,7 @@ There are also several companies dedicating employees to Expert development.
 We have been blessed to have had an influx of contributors since we founded Expert. Some hearken back to Lexical and Next LS, as well as brand new contributors.
 
 - **Lucas San Roman** ([Doorgan](https://github.com/Doorgan)): The first person to start working on Expert full time, funded by the EEF earmarked funds. Lucas has been absolutely instrumental in finishing the integration of Lexical and Next LS into what we know as Expert today.
-- **Cameron Duley** ([Moosieus](https://github.com/Moosieus)): Cameron has built up the entirety of the [Expert extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert).
+- **Cameron Duley** ([Moosieus](https://github.com/Moosieus)): Cameron helped adapt the [Expert extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert) from the old Lexical extension.
 - **Paweł Świątkowski** ([katafrakt](https://github.com/katafrakt)): Has been consistently providing patches and new features driven from real world usage at Jump.
 - **Gabriel Pereira** ([gp-pereira](https://github.com/gp-pereira)): Integrated his library [Refactorex](https://github.com/gp-pereira/refactorex) into Expert, bringing support for a litany of refactors. You can read his paper on building Refactorex (includes shoutouts to [GenLSP](https://github.com/elixir-tools/gen_lsp) and [Sourceror](https://github.com/doorgan/sourceror)) [here](https://doi.org/10.5753/se4fp.2025.13088)!
 
