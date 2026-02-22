@@ -1,6 +1,6 @@
 ---
 layout: ExpertLspOrg.PostLayout
-title: "The First Release Candidate: 0.1.0-rc.0"
+title: "The First Release Candidate"
 date: February 9, 2026 08:42:38 AM EST
 permalink: /:title/
 authors: [mitch]
@@ -9,11 +9,16 @@ tags: []
 
 Hello everyone!
 
-After many months of work, we have cut the first release candidate [v0.1.0-rc.0](https://github.com/elixir-lang/expert/releases/tag/v0.1.0-rc.0) for the Expert language server. This has been a huge effort by a number of people and we thank you for the patience and support!
+After many months of work, we have cut the first (and second!) release candidate [v0.1.0-rc.1](https://github.com/elixir-lang/expert/releases/tag/v0.1.0-rc.1) for the Expert language server. This has been a huge effort by a number of people and we thank you for the patience and support!
 
-This release marks that effort to [combine Lexical and Next LS](https://www.youtube.com/watch?v=2vIw2fb9DxA) have reached stability and developers can migrate over without fear that their development workflow will be broken.
+This release marks that effort to [combine Lexical and Next LS](https://www.youtube.com/watch?v=2vIw2fb9DxA) has reached stability and developers can migrate over without fear that their development workflow will be broken.
 
 Before we dive into the release candidate, let's thank the project sponsors, contributors, and review the milestones we've set up.
+
+> [!note] TLDR
+> We have published the first release candidate of Expert and need your help by trying it out and reporting bugs. We appreciate all the help.
+>
+> Do not hesitate to open an issue if you run into problems, have a question about the documentation, or have trouble getting it set up.
 
 ## Funding
 
@@ -38,8 +43,9 @@ We have been blessed to have had an influx of contributors since we founded Expe
 - **Lucas San Roman** ([Doorgan](https://github.com/Doorgan)): The first person to start working on Expert full time, funded by the EEF earmarked funds. Lucas has been absolutely instrumental in finishing the integration of Lexical and Next LS into what we know as Expert today.
 - **Cameron Duley** ([Moosieus](https://github.com/Moosieus)): Cameron has built up the entirety of the [Expert extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert).
 - **Paweł Świątkowski** ([katafrakt](https://github.com/katafrakt)): Has been consistently providing patches and new features driven from real world usage at Jump.
+- **Gabriel Pereira** ([gp-pereira](https://github.com/gp-pereira)): Integrated his library [Refactorex](https://github.com/gp-pereira/refactorex) into Expert, bringing support for a litany of refactors. You can read his paper on building Refactorex (includes shoutouts to [GenLSP](https://github.com/elixir-tools/gen_lsp) and [Sourceror](https://github.com/doorgan/sourceror)) [here](https://doi.org/10.5753/se4fp.2025.13088)!
 
-A list of all contributors since ElixirConf 2025:
+A list of all contributors since ElixirConf 2025 (as of early February 2026):
 
 | | | | |
 |---|---|---|---|
@@ -55,7 +61,7 @@ A list of all contributors since ElixirConf 2025:
 | [Oliver Kriska](https://github.com/oliver-kriska) | [Erick Navarro](https://github.com/erickgnavar) | [Artem Solomatin](https://github.com/solar05) | [Maks E.](https://github.com/salfum) |
 | [Brian Cardarella](https://github.com/bcardarella) |  |  |  |
 
-## v0.1.0-rc.0
+## v0.1.0-rc.1
 
 Shortly after our public announcement during [José's keynote at ElixirConf 2025](https://youtu.be/BUOTLZOyLvc?t=1427), I triaged the work into GitHub issues and organized them into milestones. These milestones are the priority list for contributors needing to decide what to work on.
 
@@ -146,6 +152,15 @@ We want people to know that we think its ready, but we need broader testing stil
 Once we capture and fix the issues reported with RC 0, we will release an RC 1 to verify with users that those bugs are fixed. Depending on the amount of issues reported during RC 1, we will publish the full 0.1.0 release.
 
 Hopefully this process takes 2-3 weeks.
+
+</details>
+
+<details class="mt-4">
+<summary class="font-bold">What is the best way to contribute?</summary>
+
+In the near future, look for a `CONTRIBUTING.md` file in the repository. It will explain the best way to report bugs, propose features, and contribute to the project.
+
+In general, the best way to contribute is to use the software and submit detailed bug reports.
 
 </details>
 
