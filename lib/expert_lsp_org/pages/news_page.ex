@@ -12,8 +12,8 @@ defmodule ExpertLspOrg.NewsPage do
         div class: "font-sans mb-8 text-lg" do
           if @posts != [] do
             ul do
-              li class: "ml-4 list-disc" do
-                for post <- @posts do
+              for post <- @posts do
+                li class: "ml-4 list-disc" do
                   span do
                     a href: post.permalink, class: "text-purple-500" do
                       post.title
