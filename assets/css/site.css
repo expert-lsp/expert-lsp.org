@@ -68,3 +68,7 @@
     @apply text-yellow-500;
   }
 }
+
+.prose table {
+  @apply block overflow-x-scroll;
+}
