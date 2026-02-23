@@ -165,13 +165,17 @@ To configure Expert settings, use `eglot-workspace-configuration`:
 
 ```emacs-lisp
 (use-package lsp-mode
-  :ensure t
-  
+  :ensure nil
+  :hook ((elixir-mode elixir-ts-mode heex-ts-mode) . lsp-deferred)
   :config
-  (lsp-elixir-server-command '("path/to/expert" "--stdio")))
-  
-  ;; other config
-  )
+  (add-to-list 'lsp-disabled-clients 'elixir-ls)
+
+  (lsp-register-client
+   (make-lsp-client
+    :new-connection (lsp-stdio-connection
+                     '("/path/to/expert_darwin_arm64" "--stdio"))
+    :activation-fn (lsp-activate-on "elixir")
+    :server-id 'expert-elixir)))
 ```
 
 #### Configuration
