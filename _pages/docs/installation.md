@@ -31,6 +31,22 @@ Not currently available in Homebrew. It will be added once we reach [v0.1](https
 :MasonInstall expert
 ```
 
+### Mise
+
+[Mise](https://mise.jdx.dev/) can install Expert using the Aqua backend for `elixir-lang/expert`, supporting all released versions, including on Windows.
+
+#### Install
+
+```sh
+mise use aqua:elixir-lang/expert
+```
+
+#### List versions
+
+```sh
+mise ls-remote aqua:elixir-lang/expert
+```
+
 ### Nix
 
 #### Nixpkgs
