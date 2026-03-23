@@ -145,7 +145,7 @@ $ gh release download nightly \
   --clobber \
   --repo elixir-lang/expert
 
-$ chmod +x ~/.bin/expert
+$ chmod +x ~/.local/bin/expert
 ```
 
 You can also manually download the executable from the [releases](https://github.com/elixir-lang/expert/releases) page.
