@@ -10,7 +10,13 @@ defmodule Mix.Tasks.Site.Gen.Post do
 
     {opts, args, _invalid} =
       OptionParser.parse(argv,
-        strict: [draft: :boolean, kind: :string, title: :string, layout: :string]
+        strict: [
+          draft: :boolean,
+          kind: :string,
+          title: :string,
+          layout: :string,
+          authors: :string
+        ]
       )
 
     {:ok, opts} = Schematic.unify(options(), opts)
@@ -51,13 +57,14 @@ defmodule Mix.Tasks.Site.Gen.Post do
 
     permalink = "permalink: /:title/"
     tags = "tags: []"
+    authors = "authors: [#{Enum.join(opts[:authors] || [], ", ")}]"
     body = ""
 
     front_matter_postlude = "\n---\n\n"
 
     front_matter =
       front_matter_prelude <>
-        Enum.join([permalink, tags], "\n") <>
+        Enum.join([permalink, tags, authors], "\n") <>
         front_matter_postlude <> body
 
     File.write!(file_path, front_matter)
@@ -72,7 +79,17 @@ defmodule Mix.Tasks.Site.Gen.Post do
       optional(:kind, "post") => oneof(["post"]),
       optional(:draft, false) => bool(),
       optional(:title) => str(),
+      optional(:authors) => comma_delimited_string(),
       optional(:layout, "ExpertLspOrg.PostLayout") => str()
     })
+  end
+
+  defp comma_delimited_string() do
+    Schematic.raw(fn v -> is_binary(v) and String.match?(v, ~r/^[^,]*+(?:,[^,]*+)*/) end,
+      transform: fn
+        v, :to -> String.split(v, ",")
+        v, :end -> Enum.join(v, ",")
+      end
+    )
   end
 end

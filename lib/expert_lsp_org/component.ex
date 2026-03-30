@@ -73,6 +73,11 @@ defmodule ExpertLspOrg.Component do
           href: "/news" do
           "News"
         end
+
+        a class: "m-0 block pl-2 hover:underline",
+          href: "/docs/faq" do
+          "FAQ"
+        end
       end
     end
   end
