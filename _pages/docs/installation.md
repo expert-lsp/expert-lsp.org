@@ -19,11 +19,11 @@ Some extensions will manage Expert for you.
 
 ### Homebrew
 
-> [!caution] In Progress
-> 
-> Expert is not yet published to Homebrew.
+You can use Homebrew to install the latest version of Expert.
 
-Not currently available in Homebrew. It will be added once we reach [v0.1](https://github.com/elixir-lang/expert/milestone/1).
+```sh
+brew install expert
+```
 
 ### Mason
 
