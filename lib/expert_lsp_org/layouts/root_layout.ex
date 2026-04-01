@@ -90,7 +90,7 @@ defmodule ExpertLspOrg.RootLayout do
 
           ", and"
 
-          a href: "https://github.com/elixir-tools/expert-lsp.org",
+          a href: "https://github.com/expert-lsp/expert-lsp.org",
             target: "_blank",
             rel: "noreferrer",
             class: "text-hacker italic text-red-500" do
