@@ -60,7 +60,7 @@ defmodule ExpertLspOrg.Component do
         end
 
         a class: "m-0 block pl-2 hover:underline",
-          href: "https://github.com/elixir-lang/expert" do
+          href: "https://github.com/expert-lsp/expert" do
           "GitHub"
         end
 

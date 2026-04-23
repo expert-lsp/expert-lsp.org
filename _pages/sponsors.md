@@ -10,9 +10,9 @@ If your company would like to donate, please reach out to Dan Janowski at [spons
 
 ## Objectives
 
-The current priority is the inaugural [v0.1](https://github.com/elixir-lang/expert/milestone/1) release.
+The current priority is the inaugural [v0.1](https://github.com/expert-lsp/expert/milestone/1) release.
 
-You can follow progress and see future milestones for the following releases on [GitHub](https://github.com/elixir-lang/expert/milestones).
+You can follow progress and see future milestones for the following releases on [GitHub](https://github.com/expert-lsp/expert/milestones).
 
 Work paid for through sponsorships is tracked [here](https://docs.google.com/document/d/1CzSabzEpXDsG_khNRKTvsiygaRai5jMlW5XqL6zcchw/edit?usp=sharing).
 

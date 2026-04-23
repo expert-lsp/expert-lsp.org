@@ -33,18 +33,18 @@ brew install expert
 
 ### Mise
 
-[Mise](https://mise.jdx.dev/) can install Expert using the Aqua backend for `elixir-lang/expert`, supporting all released versions, including on Windows.
+[Mise](https://mise.jdx.dev/) can install Expert using the Aqua backend for `expert-lsp/expert`, supporting all released versions, including on Windows.
 
 #### Install
 
 ```sh
-mise use aqua:elixir-lang/expert
+mise use aqua:expert-lsp/expert
 ```
 
 #### List versions
 
 ```sh
-mise ls-remote aqua:elixir-lang/expert
+mise ls-remote aqua:expert-lsp/expert
 ```
 
 ### Nix
@@ -61,7 +61,7 @@ We provide a flake that can be used.
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    expert.url = "github:elixir-lang/expert";
+    expert.url = "github:expert-lsp/expert";
   };
 
   outputs = {
@@ -132,19 +132,19 @@ $ gh release download nightly \
   --pattern *linux_amd64 \
   --output ~/.local/bin/expert \
   --clobber \
-  --repo elixir-lang/expert
+  --repo expert-lsp/expert
 
 # Apple Silicon
 $ gh release download nightly \
   --pattern *darwin_arm64 \
   --output ~/.local/bin/expert \
   --clobber \
-  --repo elixir-lang/expert
+  --repo expert-lsp/expert
 
 $ chmod +x ~/.local/bin/expert
 ```
 
-You can also manually download the executable from the [releases](https://github.com/elixir-lang/expert/releases) page.
+You can also manually download the executable from the [releases](https://github.com/expert-lsp/expert/releases) page.
 
 ## Source
 
@@ -156,7 +156,7 @@ You can also manually download the executable from the [releases](https://github
 > 
 > Expert uses [just](https://just.systems/man/en/). You can install it with your systems package manager.
 
-Recipes for building from source are located in our [justfile](https://github.com/elixir-lang/expert/blob/main/justfile).
+Recipes for building from source are located in our [justfile](https://github.com/expert-lsp/expert/blob/main/justfile).
 
 ```shell
 # Builds an executable for your OS and copies it into `~/.local/bin/`

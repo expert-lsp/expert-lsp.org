@@ -18,10 +18,10 @@ Around 2022, both [Mitch Hanberg](https://github.com/mhanberg) and [Steve Cohen]
 
 So, [Next LS](https://github.com/elixir-tools/next-ls) and [Lexical](https://github.com/lexical-lsp/lexical) were both born around 2023.
 
-In 2024 the three maintainers partnered together and with the Elixir core team to focus efforts on a single official project, [Expert](https://github.com/elixir-lang/expert)! This marked the creation of the official Language Server Team, composed of Mitch, Łukasz, Steve, and [Jonatan Kłosko](https://github.com/jonatanklosko).
+In 2024 the three maintainers partnered together and with the Elixir core team to focus efforts on a single official project, [Expert](https://github.com/expert-lsp/expert)! This marked the creation of the official Language Server Team, composed of Mitch, Łukasz, Steve, and [Jonatan Kłosko](https://github.com/jonatanklosko).
 
 Mitch gave a presentation during the initial combination period at [CodeBeam America 2025](https://www.youtube.com/watch?v=2vIw2fb9DxA).
 
 Expert is an amalgamation of Next LS and Lexical, taking innovations and architecture from each. Supplemented with features neither supported from [ElixirSense](https://github.com/elixir-lsp/elixir_sense), the library that powers much of the ElixirLS.
 
-You can find Expert on [GitHub](https://github.com/elixir-lang/expert). 
+You can find Expert on [GitHub](https://github.com/expert-lsp/expert). 

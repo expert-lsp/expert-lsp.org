@@ -16,19 +16,13 @@ Please see the installation instructions [here](/docs/installation).
 
 ## Nightly releases?
 
-We have nightly [releases](https://github.com/elixir-lang/expert/releases/tag/nightly) published once a day.
+We have nightly [releases](https://github.com/expert-lsp/expert/releases/tag/nightly) published once a day.
 
 We will continue to publish the nightly releases even after we publish the first versioned release.
 
 ## Can I get Credo in my editor?
 
 We are still working out how to best support common tools like Credo that provide project diagnostics. At this time, no Credo or other plugins are supported.
-
-## Why are the projects in 3 different GitHub orgs?
-
-We chose to put the main Expert repository in the [elixir-lang](https://github.com/elixir-lang) organization to signal the importance of the project to the Elixir language ecosystem. We created the [expert-lsp](https://github.com/expert-lsp) GitHub organization for any related projects like the website and VSCode extension that don't necessarily need to go in the main `elixir-lang` org.
-
-Spitfire and GenLSP were already [elixir-tools](https://github.com/elixir-tools) projects.
 
 ## What is the best way to contribute?
 

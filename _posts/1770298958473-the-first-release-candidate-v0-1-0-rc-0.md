@@ -9,7 +9,7 @@ tags: []
 
 Hello everyone!
 
-After many months of work, we have cut the first (and second!) release candidate [v0.1.0-rc.1](https://github.com/elixir-lang/expert/releases/tag/v0.1.0-rc.1) for the Expert language server. This has been a huge effort by a number of people and we thank you for the patience and support!
+After many months of work, we have cut the first (and second!) release candidate [v0.1.0-rc.1](https://github.com/expert-lsp/expert/releases/tag/v0.1.0-rc.1) for the Expert language server. This has been a huge effort by a number of people and we thank you for the patience and support!
 
 This release marks that effort to [combine Lexical and Next LS](https://www.youtube.com/watch?v=2vIw2fb9DxA) has reached stability and developers can migrate over without fear that their development workflow will be broken.
 
@@ -67,10 +67,10 @@ Shortly after our public announcement during [José's keynote at ElixirConf 2025
 
 We are prioritizing stability first, then integrating missing features from Next LS and ElixirLS, and then brand new features.
 
-- [v0.1](https://github.com/elixir-lang/expert/milestone/1): Captures all work to get Expert to be ready to be daily driven by intrepid early adopters. We continuously add bugs to this milestone as we find them. This also included getting it running on Windows, which was missing from [Lexical](https://github.com/lexical-lsp/lexical) and [Next LS](https://github.com/elixir-tools/next-ls).
-- [v0.2](https://github.com/elixir-lang/expert/milestone/2): Captures work to integrate missing features from [Next LS](https://github.com/elixir-tools/next-ls).
-- [v0.3](https://github.com/elixir-lang/expert/milestone/3): Captures work to integrate missing features from [ElixirLS](https://github.com/elixir-lsp/elixir-ls).
-- [v0.4](https://github.com/elixir-lang/expert/milestone/4): Captures any new features not present in either [Lexical](https://github.com/lexical-lsp/lexical), [Next LS](https://github.com/elixir-tools/next-ls), or [ElixirLS](https://github.com/elixir-lsp/elixir-ls).
+- [v0.1](https://github.com/expert-lsp/expert/milestone/1): Captures all work to get Expert to be ready to be daily driven by intrepid early adopters. We continuously add bugs to this milestone as we find them. This also included getting it running on Windows, which was missing from [Lexical](https://github.com/lexical-lsp/lexical) and [Next LS](https://github.com/elixir-tools/next-ls).
+- [v0.2](https://github.com/expert-lsp/expert/milestone/2): Captures work to integrate missing features from [Next LS](https://github.com/elixir-tools/next-ls).
+- [v0.3](https://github.com/expert-lsp/expert/milestone/3): Captures work to integrate missing features from [ElixirLS](https://github.com/elixir-lsp/elixir-ls).
+- [v0.4](https://github.com/expert-lsp/expert/milestone/4): Captures any new features not present in either [Lexical](https://github.com/lexical-lsp/lexical), [Next LS](https://github.com/elixir-tools/next-ls), or [ElixirLS](https://github.com/elixir-lsp/elixir-ls).
 
 ## Features
 
@@ -92,7 +92,7 @@ A quick list includes:
 
 If you'd like to contribute or open an issue, you can find our various projects here.
 
-- [elixir-lang/expert](https://github.com/elixir-lang/expert): the Expert source code
+- [expert-lsp/expert](https://github.com/expert-lsp/expert): the Expert source code
 - [expert-lsp/vscode-expert](https://github.com/expert-lsp/vscode-expert): the Visual Studio Code extension
 - [elixir-tools/spitfire](https://github.com/elixir-tools/spitfire): our error tolerant Elixir parser
 - [elixir-tools/gen_lsp](https://github.com/elixir-tools/gen_lsp): the language server protocol process abstraction
@@ -122,7 +122,7 @@ Please see the installation instructions [here](/docs/installation).
 <details class="mt-4">
 <summary class="font-bold">Nightly releases?</summary>
 
-We have nightly [releases](https://github.com/elixir-lang/expert/releases/tag/nightly) published once a day.
+We have nightly [releases](https://github.com/expert-lsp/expert/releases/tag/nightly) published once a day.
 
 We will continue to publish the nightly releases even after we publish the first versioned release.
 
@@ -137,6 +137,9 @@ We are still working out how to best support common tools like Credo that provid
 
 <details class="mt-4">
 <summary class="font-bold">Why are the projects in 3 different GitHub orgs?</summary>
+
+> [!note] Outdated
+> Since publishing, we have migrated the `expert` GitHub repository to the [expert-lsp](https://github.com/expert-lsp) organization.
 
 We chose to put the main Expert repository in the [elixir-lang](https://github.com/elixir-lang) organization to signal the importance of the project to the Elixir language ecosystem. We created the [expert-lsp](https://github.com/expert-lsp) GitHub organization for any related projects like the website and VSCode extension that don't necessarily need to go in the main `elixir-lang` org.
 

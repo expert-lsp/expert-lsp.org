@@ -11,7 +11,7 @@ Expert stores data in three locations: a per-project directory, a global engine 
 
 ### Burrito payload
 
-If you installed Expert using a pre-compiled binary from [GitHub releases](https://github.com/elixir-lang/expert/releases), the binary is packaged with [Burrito](https://github.com/burrito-elixir/burrito) and extracts its payload to a platform-specific directory on first run.
+If you installed Expert using a pre-compiled binary from [GitHub releases](https://github.com/expert-lsp/expert/releases), the binary is packaged with [Burrito](https://github.com/burrito-elixir/burrito) and extracts its payload to a platform-specific directory on first run.
 
 > [!note]
 >
