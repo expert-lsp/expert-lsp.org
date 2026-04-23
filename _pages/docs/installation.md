@@ -51,11 +51,7 @@ mise ls-remote aqua:elixir-lang/expert
 
 #### Nixpkgs
 
-> [!caution] In Progress
-> 
-> Expert is not yet published to Nixpkgs.
-
-Not currently available in Nixpkgs. It will be added once we reach [v0.1](https://github.com/elixir-lang/expert/milestone/1).
+Expert can be added to your devShells or used with `nix run nixpkgs#expert`
 
 #### Flake
 
