@@ -67,35 +67,44 @@ We provide a flake that can be used.
     };
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    expert,
-  }: let
-    systems = [
-      "x86_64-linux"
-      "aarch64-darwin"
-    ];
-    forAllSystems = f:
-      nixpkgs.lib.genAttrs systems (system:
-        f {
-          inherit system;
-          pkgs = nixpkgs.legacyPackages.${system};
-        });
-  in {
-    devShells = forAllSystems ({
-      system,
-      pkgs,
-    }: {
-      default = pkgs.mkShell {
-        packages = with pkgs; [
-          elixir_1_19
-          erlang
-          expert.packages.${system}.default
-        ];
-      };
-    });
-  };
+  outputs =
+    {
+      self,
+      nixpkgs,
+      expert,
+    }:
+    let
+      systems = [
+        "x86_64-linux"
+        "aarch64-darwin"
+      ];
+      forAllSystems =
+        f:
+        nixpkgs.lib.genAttrs systems (
+          system:
+          f {
+            inherit system;
+            pkgs = nixpkgs.legacyPackages.${system};
+          }
+        );
+    in
+    {
+      devShells = forAllSystems (
+        {
+          system,
+          pkgs,
+        }:
+        {
+          default = pkgs.mkShell {
+            packages = with pkgs; [
+              elixir_1_19
+              erlang
+              expert.packages.${system}.default
+            ];
+          };
+        }
+      );
+    };
 }
 ```
 
