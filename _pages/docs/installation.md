@@ -61,7 +61,10 @@ We provide a flake that can be used.
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    expert.url = "github:expert-lsp/expert";
+    expert = {
+      url = "github:expert-lsp/expert";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -86,7 +89,7 @@ We provide a flake that can be used.
     }: {
       default = pkgs.mkShell {
         packages = with pkgs; [
-          elixir_1_18
+          elixir_1_19
           erlang
           expert.packages.${system}.default
         ];
