@@ -189,4 +189,17 @@ To configure Expert settings, use `lsp-register-custom-settings`:
 
 ## Sublime
 
-> [!warning] TODO
+Install the [LSP](https://packagecontrol.io/packages/LSP) package with [Package Control](https://packagecontrol.io/). You do not need to install the LSP-elixir package.
+
+In the menu, go to Sublime Text -> Settings -> Package Settings -> LSP -> Server Configurations. In the right pane, add an entry for Expert:
+
+```json
+{
+  "expert": {
+    "enabled": true,
+    "command": ["expert", "--stdio=true"],
+    "selector": "source.elixir | source.ex | source.exs | text.html.heex",
+    "initializationOptions": {}
+  }
+}
+```
