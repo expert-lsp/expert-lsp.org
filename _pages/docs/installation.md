@@ -9,11 +9,9 @@ order: 1
 > 
 > Documentation is still a work in progress!
 
-## Editor Extensions
+Before starting to use Expert, you need to have it installed and ready on your machine. There are many methods available. The editor extension for VSCode and its forks, for example, will install it for you, if you want. Other editors (notably Neovim via Mason) may offer in-editor installation too. Check the [Editors](/docs/editors) page for details.
 
-Some extensions will manage Expert for you.
-
-[Read more](/docs/editors).
+If the editor does not offer the installation method or you want to install manually anyway, you have a range of options available.
 
 ## Package Managers
 
@@ -23,12 +21,6 @@ You can use Homebrew to install the latest version of Expert.
 
 ```sh
 brew install expert
-```
-
-### Mason
-
-```vim
-:MasonInstall expert
 ```
 
 ### Nix

@@ -13,6 +13,12 @@ The extension will take care of installing Expert for you, if you wish.
 
 ## Neovim
 
+In Neovim you can install Expert via [Mason](https://github.com/mason-org/mason.nvim):
+
+```vim
+:MasonInstall expert
+```
+
 ### nvim-lspconfig
 
 [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) supports Expert.
