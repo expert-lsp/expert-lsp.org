@@ -16,9 +16,7 @@ Please see the installation instructions [here](/docs/installation).
 
 ## Nightly releases?
 
-We have nightly [releases](https://github.com/expert-lsp/expert/releases/tag/nightly) published once a day.
-
-We will continue to publish the nightly releases even after we publish the first versioned release.
+We have nightly [releases](https://github.com/expert-lsp/expert/releases/tag/nightly) published once a day. Try them to test latest developments in the language server, if you are willing to risk some stability. Use the installation instructions [here](/docs/installation#github-releases) to get them.
 
 ## Can I get Credo in my editor?
 
