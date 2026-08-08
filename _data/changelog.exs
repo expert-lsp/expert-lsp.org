@@ -1,4 +1,4 @@
-if File.exists?("_build/changelog.md") and Mix.env() == :prod do
+if File.exists?("_build/changelog.md") do
   File.read!("_build/changelog.md")
 else
   github_api = "https://api.github.com/repos/expert-lsp/expert/tags"
