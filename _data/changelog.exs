@@ -6,10 +6,13 @@ else
 
   %{body: page} =
     with %{body: [object | _]} <- Req.get!(github_api),
-         %{"name" => tag} when not is_nil(tag) <- object do
+         %{"name" => "v" <> _version = tag} <- object do
+      File.write!("_build/changelog_version.txt", tag)
       Req.get!("#{base_url}/tags/#{tag}/CHANGELOG.md")
     else
-      _ -> Req.get!("#{base_url}/heads/main/CHANGELOG.md")
+      _ ->
+        tag = File.read!("_build/changelog_version.txt")
+        Req.get!("#{base_url}/tags/#{tag}/CHANGELOG.md")
     end
 
   File.write!("_build/changelog.md", page)
