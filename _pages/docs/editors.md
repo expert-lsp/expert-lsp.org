@@ -89,7 +89,7 @@ Add the following config to your `~/.config/helix/languages.toml`.
 [[language]]
 name = "elixir"
 scope = "source.elixir"
-language-server = { command = "path/to/expert", args = ["--stdio=true"] }
+language-server = { command = "path/to/expert", args = ["--stdio"] }
 ```
 
 If you are using the latest git version of helix use this:
@@ -102,7 +102,7 @@ language-servers = ["expert"]
 
 [language-server.expert]
 command = "path/to/expert"
-args = ["--stdio=true"]
+args = ["--stdio"]
 ```
 
 ### Configuration
@@ -112,7 +112,7 @@ To configure Expert settings, add a `config` section to the language server defi
 ```toml
 [language-server.expert]
 command = "path/to/expert"
-args = ["--stdio=true"]
+args = ["--stdio"]
 
 [language-server.expert.config]
 workspaceSymbols = { minQueryLength = 0 }
@@ -203,7 +203,7 @@ In the menu, go to Sublime Text -> Settings -> Package Settings -> LSP -> Server
 {
   "expert": {
     "enabled": true,
-    "command": ["expert", "--stdio=true"],
+    "command": ["expert", "--stdio"],
     "selector": "source.elixir | source.ex | source.exs | text.html.heex",
     "initializationOptions": {}
   }
