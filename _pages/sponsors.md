@@ -23,6 +23,7 @@ A huge thanks to our current sponsors!
 [![](/sponsors/tauspace.png)](https://www.tauspace.com/)
 [![](/sponsors/river.png)](https://river.com/)
 [![](/sponsors/logo-enigmatic-original.webp)](https://enigmatic.swiss/)
+[![](/sponsors/fresha.png)](https://fresha.com)
 
 ## Emeritus
 
