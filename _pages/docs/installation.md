@@ -37,38 +37,50 @@ We provide a flake that can be used.
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    expert.url = "github:expert-lsp/expert";
+    expert = {
+      url = "github:expert-lsp/expert";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    expert,
-  }: let
-    systems = [
-      "x86_64-linux"
-      "aarch64-darwin"
-    ];
-    forAllSystems = f:
-      nixpkgs.lib.genAttrs systems (system:
-        f {
-          inherit system;
-          pkgs = nixpkgs.legacyPackages.${system};
-        });
-  in {
-    devShells = forAllSystems ({
-      system,
-      pkgs,
-    }: {
-      default = pkgs.mkShell {
-        packages = with pkgs; [
-          elixir_1_18
-          erlang
-          expert.packages.${system}.default
-        ];
-      };
-    });
-  };
+  outputs =
+    {
+      self,
+      nixpkgs,
+      expert,
+    }:
+    let
+      systems = [
+        "x86_64-linux"
+        "aarch64-darwin"
+      ];
+      forAllSystems =
+        f:
+        nixpkgs.lib.genAttrs systems (
+          system:
+          f {
+            inherit system;
+            pkgs = nixpkgs.legacyPackages.${system};
+          }
+        );
+    in
+    {
+      devShells = forAllSystems (
+        {
+          system,
+          pkgs,
+        }:
+        {
+          default = pkgs.mkShell {
+            packages = with pkgs; [
+              elixir_1_19
+              erlang
+              expert.packages.${system}.default
+            ];
+          };
+        }
+      );
+    };
 }
 ```
 
