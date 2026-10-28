@@ -16,6 +16,7 @@ Supported completion types:
 - **Struct fields** - Field names when working with structs
 - **Map keys** - Known keys from maps
 - **Module attributes** - Attributes defined in the current module
+- **Hex packages** - Packages published to [Hex](https://hex.pm/)
 
 <video autoplay loop muted playsinline controls>
   <source src="/docs/features/completions.mp4" type="video/mp4">

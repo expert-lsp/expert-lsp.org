@@ -69,7 +69,7 @@ defmodule Mix.Tasks.Site.Gen.Post do
 
     File.write!(file_path, front_matter)
 
-    Mix.shell().info("Succesfully created #{file_path}!")
+    Mix.shell().info("Successfully created #{file_path}!")
   end
 
   defp options do

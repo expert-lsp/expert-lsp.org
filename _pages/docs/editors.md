@@ -7,11 +7,17 @@ order: 2
 
 ## Visual Studio Code
 
-The official extension for Visual Studio Code (and its forks, such as Cursor) is available as **Expert LSP** in the [Visual Studio Marketplate](https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert) and in the [Open VSX Registry](https://open-vsx.org/extension/ExpertLSP/expert).
+The official extension for Visual Studio Code (and its forks, such as Cursor) is available as **Expert LSP** in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ExpertLSP.expert) and in the [Open VSX Registry](https://open-vsx.org/extension/ExpertLSP/expert).
 
 The extension will take care of installing Expert for you, if you wish.
 
 ## Neovim
+
+In Neovim you can install Expert via [Mason](https://github.com/mason-org/mason.nvim):
+
+```vim
+:MasonInstall expert
+```
 
 ### nvim-lspconfig
 
@@ -83,7 +89,7 @@ Add the following config to your `~/.config/helix/languages.toml`.
 [[language]]
 name = "elixir"
 scope = "source.elixir"
-language-server = { command = "path/to/expert", args = ["--stdio=true"] }
+language-server = { command = "path/to/expert", args = ["--stdio"] }
 ```
 
 If you are using the latest git version of helix use this:
@@ -96,7 +102,7 @@ language-servers = ["expert"]
 
 [language-server.expert]
 command = "path/to/expert"
-args = ["--stdio=true"]
+args = ["--stdio"]
 ```
 
 ### Configuration
@@ -106,7 +112,7 @@ To configure Expert settings, add a `config` section to the language server defi
 ```toml
 [language-server.expert]
 command = "path/to/expert"
-args = ["--stdio=true"]
+args = ["--stdio"]
 
 [language-server.expert.config]
 workspaceSymbols = { minQueryLength = 0 }
@@ -189,4 +195,17 @@ To configure Expert settings, use `lsp-register-custom-settings`:
 
 ## Sublime
 
-> [!warning] TODO
+Install the [LSP](https://packagecontrol.io/packages/LSP) package with [Package Control](https://packagecontrol.io/). You do not need to install the LSP-elixir package.
+
+In the menu, go to Sublime Text -> Settings -> Package Settings -> LSP -> Server Configurations. In the right pane, add an entry for Expert:
+
+```json
+{
+  "expert": {
+    "enabled": true,
+    "command": ["expert", "--stdio"],
+    "selector": "source.elixir | source.ex | source.exs | text.html.heex",
+    "initializationOptions": {}
+  }
+}
+```

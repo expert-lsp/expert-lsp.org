@@ -10,7 +10,7 @@ If your company would like to donate, please reach out to Dan Janowski at [spons
 
 ## Objectives
 
-The current priority is the inaugural [v0.1](https://github.com/expert-lsp/expert/milestone/1) release.
+The current priority is the [v0.3](https://github.com/expert-lsp/expert/milestone/3) release.
 
 You can follow progress and see future milestones for the following releases on [GitHub](https://github.com/expert-lsp/expert/milestones).
 
@@ -23,6 +23,7 @@ A huge thanks to our current sponsors!
 [![](/sponsors/tauspace.png)](https://www.tauspace.com/)
 [![](/sponsors/river.png)](https://river.com/)
 [![](/sponsors/logo-enigmatic-original.webp)](https://enigmatic.swiss/)
+[![](/sponsors/fresha.png)](https://fresha.com)
 
 ## Emeritus
 

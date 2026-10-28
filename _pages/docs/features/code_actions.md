@@ -29,5 +29,3 @@ When calling a function that doesn't exist, Expert can create a stub function de
 <video autoplay loop muted playsinline controls>
   <source src="/docs/features/code_action_undefined_function.mp4" type="video/mp4">
 </video>
-
-

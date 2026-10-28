@@ -33,6 +33,6 @@ closely resembles the Output Panel from Visual Studio Code.
 
 ## Open your editor from the terminal
 
-To ensure the right environment variables are set(such as `SHELL` and `PATH`), open you editor using the terminal.
+To ensure the right environment variables are set (such as `SHELL` and `PATH`), open your editor using the terminal.
 
 Expert will output the detected elixir executable path in the logs, so you can verify that it's using the correct one.

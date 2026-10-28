@@ -16,9 +16,7 @@ Please see the installation instructions [here](/docs/installation).
 
 ## Nightly releases?
 
-We have nightly [releases](https://github.com/expert-lsp/expert/releases/tag/nightly) published once a day.
-
-We will continue to publish the nightly releases even after we publish the first versioned release.
+We have nightly [releases](https://github.com/expert-lsp/expert/releases/tag/nightly) published once a day. Try them to test latest developments in the language server, if you are willing to risk some stability. Use the installation instructions [here](/docs/installation#github-releases) to get them.
 
 ## Can I get Credo in my editor?
 
@@ -52,7 +50,6 @@ Please see the [History](/history) page for the origin story.
 
 ## How did you combine Lexical and Next LS?
 
-We started with the Lexical codebase since it was the more complicated one, then altered it to use components from Next LS like using [Burrito](https://www.youtube.com/watch?v=2vIw2fb9DxA) for releases, [GenLSP](https://github.com/elixir-tools/gen_lsp) for the LSP abstraction and soon will be exploring other parts of Next LS like using SQLite.
+We started with the Lexical codebase, then adapted it to use components from Next LS. These include [Burrito](https://www.youtube.com/watch?v=2vIw2fb9DxA) for releases, [GenLSP](https://github.com/elixir-tools/gen_lsp) for the LSP abstraction, and SQLite for indexing.
 
 You can see more details in my (Mitch) talk at [CodeBeam America 2025](https://www.youtube.com/watch?v=2vIw2fb9DxA) for more information.
-

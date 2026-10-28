@@ -1,8 +1,19 @@
 if File.exists?("_build/changelog.md") do
   File.read!("_build/changelog.md")
 else
+  github_api = "https://api.github.com/repos/expert-lsp/expert/tags"
+  base_url = "https://raw.githubusercontent.com/expert-lsp/expert/refs"
+
   %{body: page} =
-    Req.get!("https://raw.githubusercontent.com/expert-lsp/expert/refs/heads/main/CHANGELOG.md")
+    with %{body: [object | _]} <- Req.get!(github_api),
+         %{"name" => "v" <> _version = tag} <- object do
+      File.write!("_build/changelog_version.txt", tag)
+      Req.get!("#{base_url}/tags/#{tag}/CHANGELOG.md")
+    else
+      _ ->
+        tag = File.read!("_build/changelog_version.txt")
+        Req.get!("#{base_url}/tags/#{tag}/CHANGELOG.md")
+    end
 
   File.write!("_build/changelog.md", page)
 

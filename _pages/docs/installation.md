@@ -9,11 +9,9 @@ order: 1
 > 
 > Documentation is still a work in progress!
 
-## Editor Extensions
+Before starting to use Expert, you need to have it installed and ready on your machine. There are many methods available. The editor extension for VSCode and its forks, for example, will install it for you, if you want. Other editors (notably Neovim via Mason) may offer in-editor installation too. Check the [Editors](/docs/editors) page for details.
 
-Some extensions will manage Expert for you.
-
-[Read more](/docs/editors).
+If the editor does not offer the installation method or you want to install manually anyway, you have a range of options available.
 
 ## Package Managers
 
@@ -23,28 +21,6 @@ You can use Homebrew to install the latest version of Expert.
 
 ```sh
 brew install expert
-```
-
-### Mason
-
-```
-:MasonInstall expert
-```
-
-### Mise
-
-[Mise](https://mise.jdx.dev/) can install Expert using the Aqua backend for `expert-lsp/expert`, supporting all released versions, including on Windows.
-
-#### Install
-
-```sh
-mise use aqua:expert-lsp/expert
-```
-
-#### List versions
-
-```sh
-mise ls-remote aqua:expert-lsp/expert
 ```
 
 ### Nix
@@ -130,6 +106,24 @@ or
 paru -s expert-git
 ```
 
+## Version Managers
+
+### Mise
+
+[Mise](https://mise.en.dev/) can install Expert, supporting all released versions, including on Windows.
+
+#### Install
+
+```sh
+mise use expert
+```
+
+#### List versions
+
+```sh
+mise ls-remote expert
+```
+
 ## GitHub Releases
 
 > [!caution]
@@ -138,22 +132,22 @@ paru -s expert-git
 
 You can easily install Expert with the [gh](https://github.com/cli/cli) CLI and save it somewhere on your machine.
 
-```shell
+```sh
 # Linux AMD64
-$ gh release download nightly \
+gh release download nightly \
   --pattern *linux_amd64 \
   --output ~/.local/bin/expert \
   --clobber \
   --repo expert-lsp/expert
 
 # Apple Silicon
-$ gh release download nightly \
+gh release download nightly \
   --pattern *darwin_arm64 \
   --output ~/.local/bin/expert \
   --clobber \
   --repo expert-lsp/expert
 
-$ chmod +x ~/.local/bin/expert
+chmod +x ~/.local/bin/expert
 ```
 
 You can also manually download the executable from the [releases](https://github.com/expert-lsp/expert/releases) page.
@@ -166,19 +160,14 @@ You can also manually download the executable from the [releases](https://github
 
 > [!tip]
 > 
-> Expert uses [just](https://just.systems/man/en/). You can install it with your systems package manager.
+> Expert uses [just](https://just.systems/man/en/). You can install it with your system's package manager.
 
 Recipes for building from source are located in our [justfile](https://github.com/expert-lsp/expert/blob/main/justfile).
+The following builds a release for your OS, copies it to `~/.local/libexec/expert`, and symlinks
+the executable to `~/.local/bin/expert`.
 
-```shell
-# Builds an executable for your OS and copies it into `~/.local/bin/`
-$ just install
+```sh
+just install
 ```
 
-You can also skip cross-platform builds by running:
-
-```shell
-$ just release
-```
-
-And following the instructions in the output to point your editor to this build.
+You can install it somewhere other than `~/.local` with the `--prefix` flag.

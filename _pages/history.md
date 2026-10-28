@@ -24,4 +24,4 @@ Mitch gave a presentation during the initial combination period at [CodeBeam Ame
 
 Expert is an amalgamation of Next LS and Lexical, taking innovations and architecture from each. Supplemented with features neither supported from [ElixirSense](https://github.com/elixir-lsp/elixir_sense), the library that powers much of the ElixirLS.
 
-You can find Expert on [GitHub](https://github.com/expert-lsp/expert). 
+You can find Expert on [GitHub](https://github.com/expert-lsp/expert).
